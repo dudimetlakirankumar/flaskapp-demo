@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request, redirect
 from flask_mysqldb import MySQL
-from yaml import secure_load
+from yaml import safe_load
 
 app = Flask(__name__)
 
 # Configure db
-db = secure_load(open('db.yaml'))
+db = safe_load(open('db.yaml'))
 app.config['MYSQL_HOST'] = db['mysql_host']
 app.config['MYSQL_USER'] = db['mysql_user']
 app.config['MYSQL_PASSWORD'] = db['mysql_password']
