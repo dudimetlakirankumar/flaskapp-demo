@@ -1,5 +1,5 @@
-mysql_host: 'mysqlkirands.mysql.database.azure.com'
-mysql_user: 'myadmin@mysqlkirands'
+mysql_host: 'localhost'
+mysql_user: 'root'
 # Enter your password in field below
-mysql_password: 'MyP@ssw0rd123'
-mysql_db: 'mysqlkirands'
+mysql_password: 'root'
+mysql_db: 'mysql'
