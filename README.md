@@ -7,3 +7,12 @@ Change the password in db.yaml to that of your MySQL's password
 Run the application by executing the command python3 app.py
 
 The application runs on localhost:5000
+
+======================
+
+sudo apt update
+sudo apt install libmysqlclient-dev
+
+export MYSQLCLIENT_CFLAGS=`mysql_config --cflags`
+export MYSQLCLIENT_LDFLAGS=`mysql_config --libs`
+
